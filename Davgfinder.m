@@ -24,6 +24,7 @@ theta1=(y(:,1));
 s1=y(:,2);
 figure
 plot(theta1,s1)
-xlabel("Theta")
+xlabel("Theta (Radians)")
 ylabel("Speed")
+
 fontsize(18,"points")
