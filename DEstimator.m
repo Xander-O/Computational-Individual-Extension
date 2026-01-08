@@ -29,6 +29,7 @@ f=@(t,y) [(y(2)^2-cos(y(1)))/y(2);-sin(y(1))-Davg*y(2)^2];
 theta1=(y(:,1));
 s1=y(:,2);
 figure
+subplot(1,2,1)
 plot(theta1,s1)
 xlabel("Theta (Radians)")
 ylabel("Speed")
@@ -36,6 +37,7 @@ fontsize(18,"points")
 
 %compare with plot of data
 figure
+subplot(1,2,2)
 plot(theta2,s2,Color="b",LineStyle=":")
 xlabel("Theta (Radians)")
 ylabel("Speed (m/s)")
@@ -54,4 +56,5 @@ plot(theta3,s3,Color="r",LineStyle="-")
 xlabel("Theta (Radians)")
 ylabel("Speed (m/s)")
 fontsize(18,"points")
+
 
